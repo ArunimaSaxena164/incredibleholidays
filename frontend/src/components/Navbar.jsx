@@ -120,9 +120,13 @@ function Navbar() {
           )}
         </div>
 
-        <NavLink to="/corporate">
-          Corporate Travel
-        </NavLink>
+       <a
+  href="https://www.biztrav.in/"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Corporate Travel
+</a>
 
         <NavLink to="/testimonials">
           Testimonials
