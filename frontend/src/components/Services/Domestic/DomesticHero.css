@@ -1,0 +1,356 @@
+.domestic-hero{
+    margin-top:120px;
+
+    position:relative;
+
+    padding-bottom:95px;
+}
+
+/* HERO */
+
+.domestic-hero-slider{
+    position:relative;
+
+    height:500px;
+
+    overflow:hidden;
+
+    border-top:1px solid transparent;
+}
+
+.domestic-hero-slide{
+    position:absolute;
+    inset:0;
+
+    background-size:cover;
+    background-position:center;
+
+    opacity:0;
+
+    transition:
+    opacity .8s ease-in-out;
+}
+
+.domestic-hero-slide.active{
+    opacity:1;
+}
+
+.domestic-hero-overlay{
+    position:absolute;
+    inset:0;
+
+    background:
+    rgba(0,0,0,.45);
+
+    z-index:2;
+}
+
+/* ORANGE CORNERS */
+
+.domestic-orange-top{
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:330px;
+    height:170px;
+
+    background:#f67d1f;
+
+    clip-path:
+    polygon(
+      0 0,
+      100% 0,
+      0 100%
+    );
+
+    z-index:3;
+
+    opacity:.9;
+}
+
+.domestic-orange-bottom{
+    position:absolute;
+
+    right:0;
+    bottom:0;
+
+    width:330px;
+    height:170px;
+
+    background:#f67d1f;
+
+    clip-path:
+    polygon(
+      100% 0,
+      100% 100%,
+      0 100%
+    );
+
+    z-index:3;
+
+    opacity:.9;
+}
+
+/* CONTENT */
+
+.domestic-hero-content{
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    z-index:4;
+
+    display:flex;
+    flex-direction:column;
+
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    width:100%;
+
+    max-width:900px;
+
+    margin:0 auto;
+}
+
+.domestic-hero-content h1{
+    font-family:"Cormorant Garamond", serif;
+
+    color:#fff;
+
+    font-size:72px;
+
+    font-weight:500;
+
+    line-height:1.05;
+
+    margin:0 0 28px;
+
+    text-align:center;
+
+    white-space:nowrap;
+}
+
+.domestic-hero-btn{
+    display:flex;
+
+    align-items:center;
+    gap:10px;
+
+    background:#ff8236;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    padding:15px 35px;
+
+    border-radius:50px;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+    margin:0 auto;
+}
+
+.domestic-hero-btn:hover{
+    background:#fff;
+
+    color:#ff8236;
+}
+/* ARROWS */
+
+.domestic-hero-arrow{
+    position:absolute;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:48px;
+    height:48px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:
+    rgba(255,255,255,.9);
+
+    color:#444;
+
+    cursor:pointer;
+
+    z-index:5;
+}
+
+.domestic-hero-arrow:hover{
+    background:#ff8236;
+
+    color:#fff;
+}
+
+.domestic-left-arrow{
+    left:35px;
+}
+
+.domestic-right-arrow{
+    right:35px;
+}
+
+/* FEATURES */
+
+.domestic-hero-features{
+    position:absolute;
+
+    left:50%;
+    bottom:0;
+
+    transform:translate(-50%,50%);
+
+    width:62%;
+
+    background:#151111;
+
+    padding:22px;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(5,1fr);
+
+    gap:14px;
+
+    z-index:10;
+}
+
+.domestic-feature-card{
+    background:#fff;
+
+    padding:20px 10px;
+
+    text-align:center;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+}
+
+.domestic-feature-card:hover img{
+    transform:scale(1.08);
+}
+
+.domestic-feature-card img{
+    width:50px;
+
+    display:block;
+
+    margin:0 auto 12px;
+
+    transition:.3s;
+}
+
+.domestic-feature-card span{
+    font-family:
+    "Cormorant Garamond",
+    serif;
+
+    font-size:17px;
+
+    line-height:1.3;
+}
+
+/* SLIDE ANIMATION */
+
+.domestic-hero-slide{
+    position:absolute;
+    inset:0;
+
+    background-size:cover;
+    background-position:center;
+
+    opacity:0;
+
+    transition:opacity .8s ease-in-out;
+}
+
+.domestic-hero-slide.active{
+    opacity:1;
+}
+/* TABLET */
+
+@media(max-width:1100px){
+
+    .domestic-hero-content h1{
+        font-size:58px;
+    }
+
+    .domestic-hero-features{
+        width:90%;
+
+        grid-template-columns:
+        repeat(3,1fr);
+    }
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .domestic-hero{
+        padding-bottom:40px;
+    }
+
+    .domestic-hero-slider{
+        height:430px;
+    }
+
+    .domestic-hero-content h1{
+        font-size:42px;
+    }
+
+    .domestic-hero-features{
+        position:relative;
+
+        left:auto;
+        bottom:auto;
+
+        transform:none;
+
+        width:100%;
+
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+
+    .domestic-hero-arrow{
+        width:42px;
+        height:42px;
+    }
+
+    .domestic-left-arrow{
+        left:10px;
+    }
+
+    .domestic-right-arrow{
+        right:10px;
+    }
+
+    .domestic-orange-top,
+    .domestic-orange-bottom{
+        width:140px;
+        height:140px;
+    }
+}

@@ -1,0 +1,206 @@
+.testimonial-section{
+background:#161313;
+padding:90px 120px;
+text-align:center;
+}
+
+.testimonial-header{
+margin-bottom:50px;
+}
+
+.testimonial-tag{
+display:block;
+color:#ff8637;
+font-size:18px;
+font-weight:700;
+letter-spacing:4px;
+margin-bottom:14px;
+}
+
+.testimonial-title{
+color:#fff;
+font-family:'Cormorant Garamond', serif;
+font-size:48px;
+font-weight:500;
+}
+
+.testimonial-grid{
+display:grid;
+grid-template-columns:
+0.85fr
+1.4fr
+0.85fr;
+
+
+gap:28px;
+
+align-items:start;
+
+
+}
+
+.left-slider,
+.center-column,
+.right-column{
+display:flex;
+flex-direction:column;
+}
+
+.center-column{
+gap:28px;
+}
+
+.testimonial-card{
+background:#fff;
+overflow:hidden;
+
+
+transition:.35s;
+
+
+}
+
+.testimonial-card:hover{
+transform:translateY(-6px);
+}
+
+.testimonial-card video{
+width:100%;
+display:block;
+background:#000;
+}
+
+.slider-card video{
+height:500px;
+object-fit:cover;
+}
+
+.center-column .testimonial-card video{
+height:230px;
+object-fit:cover;
+}
+
+.right-column .testimonial-card video{
+height:490px;
+object-fit:cover;
+}
+
+.location-bar{
+background:#ececec;
+
+
+padding:12px;
+
+font-family:'Cormorant Garamond', serif;
+font-size:22px;
+
+color:#222;
+
+
+}
+
+.slider-dots{
+display:flex;
+justify-content:center;
+gap:10px;
+
+
+margin-top:18px;
+
+
+}
+
+.dot{
+width:10px;
+height:10px;
+
+
+border:none;
+border-radius:50%;
+
+background:#8f8f8f;
+
+cursor:pointer;
+
+
+}
+
+.active-dot{
+background:#ff8637;
+}
+
+@media(max-width:1100px){
+
+    .testimonial-section{
+        padding:70px 35px;
+    }
+
+    .testimonial-grid{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .left-slider{
+        max-width:420px;
+        margin:0 auto;
+    }
+
+    .center-column{
+        max-width:600px;
+        margin:0 auto;
+        gap:20px;
+    }
+
+    .right-column{
+        max-width:420px;
+        margin:0 auto;
+    }
+
+    .slider-card video{
+        height:380px;
+        object-fit:cover;
+    }
+
+    .center-column .testimonial-card video{
+        height:220px;
+        object-fit:cover;
+    }
+
+    .right-column .testimonial-card video{
+        height:380px;
+        object-fit:cover;
+    }
+}
+
+@media(max-width:768px){
+
+    .testimonial-section{
+        padding:60px 18px;
+    }
+
+    .testimonial-title{
+        font-size:32px;
+    }
+
+    .left-slider,
+    .center-column,
+    .right-column{
+        max-width:100%;
+    }
+
+    .slider-card video{
+        height:300px;
+    }
+
+    .center-column .testimonial-card video{
+        height:220px;
+    }
+
+    .right-column .testimonial-card video{
+        height:300px;
+    }
+
+    .location-bar{
+        font-size:18px;
+    }
+}

@@ -1,0 +1,179 @@
+.about-hero {
+
+  width: 100%;
+
+  height: 350px;
+
+  margin-top: 120px;
+
+  background-image: url("/pageAbout/intro.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+}
+
+.about-hero-overlay {
+
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0,0,0,0.18);
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.about-hero-title {
+
+  color: #fff;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 5rem;
+  font-weight: 500;
+
+  margin-bottom: 18px;
+}
+
+.about-hero-breadcrumb {
+
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+}
+
+.about-hero-breadcrumb a {
+
+  color: #fff;
+
+  text-decoration: none;
+
+  font-size: 1.6rem;
+  font-weight: 500;
+
+  position: relative;
+
+  transition: all .3s ease;
+}
+
+.about-hero-breadcrumb a::after {
+
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: -6px;
+
+  width: 0;
+  height: 2px;
+
+  background: #fff;
+
+  transition: .3s;
+}
+
+.about-hero-breadcrumb a:hover::after {
+
+  width: 100%;
+}
+
+.about-hero-breadcrumb a:hover {
+
+  opacity: .85;
+}
+
+.dot {
+
+  color: white;
+
+  font-size: 1.4rem;
+}
+.about-hero-breadcrumb span
+{
+    color: white;
+}
+
+/* Laptop */
+
+@media (max-width:1200px){
+
+  .about-hero{
+    margin-top: 110px;
+    height:380px;
+  }
+
+  .about-hero-title{
+
+    font-size:4.2rem;
+  }
+
+  .about-hero-breadcrumb a{
+
+    font-size:1.4rem;
+  }
+}
+
+/* Tablet */
+
+@media (max-width:900px){
+
+  .about-hero{
+
+    margin-top:110px;
+
+    height:320px;
+  }
+
+  .about-hero-title{
+
+    font-size:3.2rem;
+  }
+
+  .about-hero-breadcrumb{
+
+    gap:12px;
+  }
+
+  .about-hero-breadcrumb a{
+
+    font-size:1.1rem;
+  }
+}
+
+/* Mobile */
+
+@media (max-width:600px){
+
+  .about-hero{
+
+    margin-top:110px;
+
+    height:260px;
+  }
+
+  .about-hero-title{
+
+    font-size:2.4rem;
+
+    margin-bottom:10px;
+  }
+
+  .about-hero-breadcrumb a{
+
+    font-size:.95rem;
+  }
+
+  .dot{
+
+    font-size:1rem;
+  }
+}

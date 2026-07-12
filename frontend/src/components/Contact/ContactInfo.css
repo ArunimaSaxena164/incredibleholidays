@@ -1,0 +1,196 @@
+.ci-section{
+    max-width:1200px;
+
+    margin:70px auto;
+
+    padding:0 25px;
+}
+
+.ci-top{
+    display:grid;
+
+    grid-template-columns:
+    380px 1fr;
+
+    gap:35px;
+
+    align-items:stretch;
+}
+
+/* LEFT PANEL */
+
+.ci-details{
+    background:#fff;
+
+    border:1px solid #ececec;
+
+    border-radius:18px;
+
+    padding:35px;
+}
+
+.ci-tag{
+    display:block;
+
+    color:#ff7f36;
+
+    font-size:11px;
+
+    font-weight:700;
+
+    letter-spacing:4px;
+
+    margin-bottom:12px;
+}
+
+.ci-details h2{
+    font-family:
+    "Cormorant Garamond",
+    serif;
+
+    font-size:42px;
+
+    font-weight:500;
+
+    color:#111;
+
+    margin-bottom:18px;
+}
+
+.ci-description{
+    color:#6f6f6f;
+
+    font-size:14px;
+
+    line-height:1.9;
+
+    margin-bottom:28px;
+}
+
+.ci-item{
+    margin-bottom:24px;
+}
+
+.ci-item h4{
+    font-family:
+    "Cormorant Garamond",
+    serif;
+
+    font-size:28px;
+
+    color:#111;
+
+    margin-bottom:6px;
+}
+
+.ci-item p{
+    color:#707070;
+
+    font-size:14px;
+
+    line-height:1.8;
+}
+
+.ci-map-btn{
+    display:inline-block;
+
+    margin-top:10px;
+
+    background:#ff7f36;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    padding:14px 28px;
+
+    border-radius:8px;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.ci-map-btn:hover{
+    background:#f06d20;
+}
+
+/* MAP */
+
+.ci-map{
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 12px 30px rgba(0,0,0,.08);
+}
+
+.ci-map iframe{
+    width:100%;
+
+    height:100%;
+
+    min-height:520px;
+
+    border:none;
+
+    display:block;
+}
+
+/* TABLET */
+
+@media(max-width:992px){
+
+    .ci-top{
+
+        grid-template-columns:1fr;
+    }
+
+    .ci-details{
+
+        order:1;
+    }
+
+    .ci-map{
+
+        order:2;
+    }
+
+    .ci-map iframe{
+
+        min-height:450px;
+    }
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .ci-section{
+
+        margin:50px auto;
+
+        padding:0 18px;
+    }
+
+    .ci-details{
+
+        padding:25px;
+    }
+
+    .ci-details h2{
+
+        font-size:34px;
+    }
+
+    .ci-item h4{
+
+        font-size:24px;
+    }
+
+    .ci-map iframe{
+
+        min-height:320px;
+    }
+}

@@ -1,0 +1,165 @@
+.domestic-iconic-section{
+    max-width:1280px;
+    margin:90px auto;
+    padding:0 40px;
+}
+
+.domestic-iconic-section h2{
+    text-align:center;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:52px;
+    font-weight:500;
+
+    color:#111;
+
+    margin-bottom:45px;
+}
+
+/* SLIDER */
+
+.domestic-iconic-slider{
+    position:relative;
+}
+
+.domestic-iconic-window{
+    overflow:hidden;
+}
+
+/* TRACK */
+
+.domestic-iconic-track{
+    display:flex;
+    gap:18px;
+
+    transition:
+    transform .7s ease;
+}
+
+/* CARD */
+
+.domestic-iconic-card{
+    flex:0 0 calc((100% - 36px)/3);
+
+    overflow:hidden;
+}
+
+.domestic-iconic-card img{
+    width:100%;
+    height:240px;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:
+    transform .4s ease;
+}
+
+.domestic-iconic-card:hover img{
+    transform:scale(1.06);
+}
+
+/* ARROWS */
+
+.domestic-iconic-arrow{
+    position:absolute;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:44px;
+    height:44px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#ff8236;
+
+    color:#fff;
+
+    cursor:pointer;
+
+    z-index:20;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    transition:.3s;
+}
+
+.domestic-iconic-arrow:hover:not(.disabled){
+    background:#e56f25;
+}
+
+.domestic-iconic-arrow.left{
+    left:-22px;
+}
+
+.domestic-iconic-arrow.right{
+    right:-22px;
+}
+
+/* DISABLED */
+
+.domestic-iconic-arrow.disabled{
+    background:#d9d9d9;
+
+    color:#999;
+
+    cursor:not-allowed;
+
+    opacity:.75;
+}
+/* TABLET */
+
+@media(max-width:992px){
+
+    .domestic-iconic-section{
+        padding:0 25px;
+    }
+
+    .domestic-iconic-section h2{
+        font-size:42px;
+    }
+
+    .domestic-iconic-card img{
+        height:210px;
+    }
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .domestic-iconic-section{
+        padding:0 15px;
+        margin:70px auto;
+    }
+
+    .domestic-iconic-section h2{
+        font-size:32px;
+        margin-bottom:25px;
+    }
+
+    .domestic-iconic-card img{
+        height:150px;
+    }
+
+    .domestic-iconic-arrow{
+        width:36px;
+        height:36px;
+    }
+
+    .domestic-iconic-arrow.left{
+        left:-5px;
+    }
+
+    .domestic-iconic-arrow.right{
+        right:-5px;
+    }
+}

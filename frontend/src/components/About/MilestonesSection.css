@@ -1,0 +1,182 @@
+.milestone-section{
+
+    position:relative;
+
+    max-width:1500px;
+
+    margin:0 auto;
+
+    padding:70px 90px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:70px;
+
+    overflow:hidden;
+}
+
+/* LEFT IMAGE */
+
+.milestone-image-wrapper{
+
+    position:relative;
+
+    flex:1;
+}
+
+.milestone-image-border{
+
+    position:absolute;
+
+    top:-12px;
+    left:-12px;
+
+    width:100%;
+    height:100%;
+
+    border:10px solid #e5e3e2;
+
+    z-index:1;
+}
+
+.milestone-image{
+
+    position:relative;
+
+    width:100%;
+
+    display:block;
+
+    z-index:2;
+}
+
+/* RIGHT CONTENT */
+
+.milestone-content{
+
+    flex:0.95;
+
+    position:relative;
+
+    z-index:3;
+}
+.milestone-content p
+{
+    font-size: 14px;
+}
+.milestone-tag{
+
+    display:block;
+
+    color:#ff7f36;
+
+    font-size:12px;
+
+    font-weight:700;
+
+    letter-spacing:4px;
+
+    margin-bottom:18px;
+}
+
+.milestone-title{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:32px;
+
+    font-weight:500;
+
+    line-height:1.15;
+
+    color:#111;
+
+    margin-bottom:28px;
+}
+
+.milestone-text{
+
+    color:#707070;
+
+    font-size:15px;
+
+    line-height:2;
+}
+
+/* TRIANGLE */
+
+.milestone-shape{
+
+    position:absolute;
+
+    right:0;
+    bottom:0;
+
+    width:280px;
+    height:280px;
+
+    background:#f5f1ef;
+
+    clip-path:polygon(100% 0,100% 100%,0 100%);
+
+    z-index:0;
+}
+
+/* TABLET */
+
+@media(max-width:992px){
+
+    .milestone-section{
+
+        flex-direction:column;
+
+        padding:60px 35px;
+
+        gap:45px;
+    }
+
+    .milestone-content{
+
+        width:100%;
+    }
+
+    .milestone-title{
+
+        font-size:38px;
+    }
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+    .milestone-section{
+
+        padding:45px 20px;
+    }
+
+    .milestone-tag{
+
+        font-size:10px;
+    }
+
+    .milestone-title{
+
+        font-size:30px;
+    }
+
+    .milestone-text{
+
+        font-size:13px;
+    }
+
+    .milestone-shape{
+
+        width:150px;
+        height:150px;
+    }
+}

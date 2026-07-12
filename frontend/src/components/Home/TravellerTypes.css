@@ -1,0 +1,210 @@
+.traveller-section{
+background:#f8f7f6;
+padding:85px 110px;
+position:relative;
+overflow:hidden;
+}
+
+.traveller-grid{
+display:grid;
+grid-template-columns:1.05fr 0.95fr;
+gap:45px;
+align-items:center;
+}
+
+/* LEFT */
+
+.image-frame{
+border:4px solid #fff;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+overflow:hidden;
+}
+
+.traveller-slide{
+width:100%;
+display:block;
+
+
+animation:fadeImage .8s ease;
+
+
+}
+.traveller-title{
+    font-size:46px;
+    max-width:520px;
+}
+.traveller-intro{
+    font-size:14px;
+    max-width:520px;
+}
+.traveller-item{
+    padding:22px 0;
+}
+.traveller-text h3{
+    font-size:22px;
+}
+.traveller-text p{
+    font-size:14px;
+    line-height:1.8;
+    
+}
+.traveller-icon{
+    font-size:30px;
+}
+@keyframes fadeImage{
+
+
+from{
+    opacity:0;
+    transform:scale(1.03);
+}
+
+to{
+    opacity:1;
+    transform:scale(1);
+}
+
+
+}
+
+/* RIGHT */
+
+.traveller-tag{
+display:block;
+color:#ff8637;
+font-size:15px;
+font-weight:700;
+letter-spacing:4px;
+margin-bottom:16px;
+}
+
+.traveller-title{
+font-family:'Cormorant Garamond', serif;
+font-size:56px;
+font-weight:500;
+color:#111;
+line-height:1.12;
+max-width:700px;
+margin-bottom:24px;
+}
+
+.traveller-intro{
+color:#707070;
+font-size:16px;
+line-height:1.9;
+margin-bottom:25px;
+}
+
+.traveller-item{
+display:flex;
+gap:24px;
+padding:28px 0;
+border-bottom:1px dashed #f0c5aa;
+}
+
+.traveller-icon{
+color:#ff8637;
+font-size:38px;
+flex-shrink:0;
+margin-top:6px;
+}
+
+.traveller-text h3{
+font-family:'Cormorant Garamond', serif;
+font-size:28px;
+font-weight:500;
+color:#111;
+margin-bottom:10px;
+}
+
+.traveller-text p{
+color:#707070;
+line-height:1.9;
+font-size:16px;
+}
+
+/* PLANE PATHS */
+
+.plane-top{
+position:absolute;
+left:20px;
+top:20px;
+width:220px;
+opacity:.4;
+}
+
+.plane-bottom{
+position:absolute;
+right:20px;
+bottom:10px;
+width:220px;
+opacity:.2;
+transform:rotate(180deg);
+}
+
+/* TABLET */
+
+@media(max-width:1100px){
+
+
+.traveller-section{
+    padding:70px 50px;
+}
+
+.traveller-grid{
+    grid-template-columns:1fr;
+    gap:40px;
+}
+
+.traveller-left{
+    max-width:550px;
+    margin:auto;
+}
+
+.traveller-title{
+    font-size:42px;
+}
+
+
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+
+.traveller-section{
+    padding:60px 20px;
+}
+
+.traveller-title{
+    font-size:32px;
+}
+
+.traveller-intro{
+    font-size:14px;
+}
+
+.traveller-item{
+    gap:16px;
+}
+
+.traveller-icon{
+    font-size:28px;
+}
+
+.traveller-text h3{
+    font-size:22px;
+}
+
+.traveller-text p{
+    font-size:14px;
+}
+
+.plane-top,
+.plane-bottom{
+    display:none;
+}
+
+
+}

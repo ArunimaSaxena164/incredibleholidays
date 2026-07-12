@@ -1,0 +1,285 @@
+.ts-section{
+    background:#f8f7f6;
+    padding:90px 70px;
+}
+
+.ts-header{
+    text-align:center;
+    max-width:900px;
+    margin:0 auto 60px;
+}
+
+.ts-tag{
+    display:block;
+    color:#ff8637;
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:4px;
+    margin-bottom:14px;
+}
+
+.ts-title{
+    font-family:'Cormorant Garamond', serif;
+    font-size:52px;
+    font-weight:500;
+    color:#111;
+    margin-bottom:18px;
+}
+
+.ts-description{
+    color:#707070;
+    font-size:15px;
+    line-height:1.9;
+}
+
+.ts-slider-wrap{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:22px;
+}
+
+.ts-nav-btn{
+    width:52px;
+    height:52px;
+
+    border:none;
+    border-radius:50%;
+
+    background:#ff8637;
+    color:#fff;
+
+    cursor:pointer;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:18px;
+
+    flex-shrink:0;
+
+    transition:.3s;
+}
+
+.ts-nav-btn:hover{
+    background:#111;
+}
+
+.ts-cards-container{
+    flex:1;
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+
+    gap:28px;
+}
+
+.ts-card{
+    background:#fff;
+
+    border-radius:12px;
+
+    text-align:center;
+
+    position:relative;
+
+    padding:35px 28px 90px;
+
+    height:500px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    box-shadow:
+    0 5px 25px rgba(0,0,0,.06);
+}
+
+.ts-quote{
+    font-size:55px;
+    color:#cfcfcf;
+    line-height:1;
+    margin-bottom:10px;
+}
+
+.ts-review-text{
+    color:#666;
+
+    font-size:13px;
+
+    line-height:1.9;
+
+    flex:1;
+
+    overflow-y:auto;
+
+    overflow-x:hidden;
+
+    padding-right:8px;
+
+    scrollbar-width:thin;
+
+    scrollbar-color:#ff8637 #f1f1f1;
+}
+.ts-review-text::-webkit-scrollbar{
+    width:6px;
+}
+
+.ts-review-text::-webkit-scrollbar-track{
+    background:#f1f1f1;
+    border-radius:10px;
+}
+
+.ts-review-text::-webkit-scrollbar-thumb{
+    background:#ff8637;
+    border-radius:10px;
+}
+
+.ts-review-text::-webkit-scrollbar-thumb:hover{
+    background:#e56f20;
+}
+
+.ts-stars{
+    color:#ffb400;
+    font-size:18px;
+
+    margin-top:16px;
+    margin-bottom:22px;
+}
+
+.ts-name{
+    position:absolute;
+
+    bottom:55px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:90%;
+
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:24px;
+    font-weight:600;
+
+    color:#111;
+}
+
+.ts-avatar{
+    width:70px;
+    height:70px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:4px solid #fff;
+
+    position:absolute;
+
+    bottom:-35px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,.15);
+}
+
+/* LAPTOP */
+
+@media(max-width:1200px){
+
+    .ts-section{
+        padding:80px 40px;
+    }
+
+    .ts-title{
+        font-size:42px;
+    }
+
+    .ts-card{
+        height:540px;
+    }
+}
+
+/* TABLET */
+
+@media(max-width:900px){
+
+    .ts-section{
+        padding:70px 25px;
+    }
+
+    .ts-title{
+        font-size:34px;
+    }
+
+    .ts-slider-wrap{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .ts-cards-container{
+        grid-template-columns:1fr;
+        width:100%;
+        max-width:650px;
+    }
+
+    .ts-card{
+        height:470px;
+    }
+
+    .ts-nav-btn{
+        width:48px;
+        height:48px;
+    }
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+    .ts-section{
+        padding:60px 18px;
+    }
+
+    .ts-title{
+        font-size:28px;
+    }
+
+    .ts-description{
+        font-size:13px;
+    }
+
+    .ts-card{
+        height:460px;
+
+        padding:
+        25px
+        20px
+        90px;
+    }
+
+    .ts-review-text{
+        font-size:12px;
+        line-height:1.9;
+    }
+
+    .ts-name{
+        font-size:20px;
+        bottom:55px;
+    }
+
+    .ts-avatar{
+        width:65px;
+        height:65px;
+    }
+
+    .ts-nav-btn{
+        width:42px;
+        height:42px;
+        font-size:15px;
+    }
+}

@@ -1,0 +1,229 @@
+.about-story-section{
+
+    max-width:1300px;
+
+    margin:0 auto;
+
+    padding:75px 90px 65px;
+
+    display:flex;
+
+    align-items:flex-start;
+
+    justify-content:space-between;
+
+    gap:45px;
+}
+
+.about-story-left{
+
+    flex:0.95;
+}
+
+.about-story-tag{
+
+    display:block;
+
+    color:#ff7f36;
+
+    font-size:11px;
+
+    font-weight:700;
+
+    letter-spacing:4px;
+
+    margin-bottom:14px;
+}
+
+.about-story-title{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:32px;
+
+    font-weight:500;
+
+    line-height:1.12;
+
+    color:#111;
+
+    margin-bottom:22px;
+}
+
+.about-story-left p{
+
+    font-size:14px;
+
+    color:#707070;
+
+    line-height:1.9;
+
+    margin-bottom:14px;
+
+    max-width:560px;
+}
+
+.about-story-right{
+
+    flex:0.85;
+}
+
+.about-philosophy-card{
+
+    background:#f5f3f2;
+
+    padding:35px;
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:22px;
+}
+
+.about-philosophy-icon{
+
+    color:#ff8a43;
+
+    font-size:42px;
+
+    flex-shrink:0;
+}
+
+.about-philosophy-card h3{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:32px;
+
+    font-weight:500;
+
+    color:#111;
+
+    margin-bottom:14px;
+}
+
+.about-philosophy-card p{
+
+    font-size:13px;
+
+    line-height:1.9;
+
+    color:#707070;
+
+    margin-bottom:12px;
+}
+
+/* LAPTOP */
+
+@media(max-width:1200px){
+
+    .about-story-section{
+
+        padding:65px 50px;
+
+        gap:35px;
+    }
+
+    .about-story-title{
+
+        font-size:38px;
+    }
+
+    .about-philosophy-card{
+
+        padding:28px;
+    }
+
+    .about-philosophy-card h3{
+
+        font-size:28px;
+    }
+}
+
+/* TABLET */
+
+@media(max-width:992px){
+
+    .about-story-section{
+
+        flex-direction:column;
+
+        padding:55px 35px;
+    }
+
+    .about-story-left,
+    .about-story-right{
+
+        width:100%;
+    }
+
+    .about-story-title{
+
+        font-size:34px;
+    }
+
+    .about-philosophy-card{
+
+        padding:24px;
+    }
+
+    .about-philosophy-card h3{
+
+        font-size:26px;
+    }
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+    .about-story-section{
+
+        padding:45px 20px;
+    }
+
+    .about-story-tag{
+
+        font-size:10px;
+
+        letter-spacing:3px;
+    }
+
+    .about-story-title{
+
+        font-size:28px;
+
+        margin-bottom:16px;
+    }
+
+    .about-story-left p{
+
+        font-size:13px;
+    }
+
+    .about-philosophy-card{
+
+        flex-direction:column;
+
+        padding:22px;
+    }
+
+    .about-philosophy-icon{
+
+        font-size:34px;
+    }
+
+    .about-philosophy-card h3{
+
+        font-size:24px;
+    }
+
+    .about-philosophy-card p{
+
+        font-size:13px;
+    }
+}
+.flipped-flag{
+    transform: scaleX(-1);
+}

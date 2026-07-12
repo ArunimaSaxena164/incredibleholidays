@@ -1,0 +1,172 @@
+.contact-hero{
+    position:relative;
+
+    width:100%;
+margin-top:120px;
+    height:400px;
+
+    background-image:
+    url("/pageContact/bg.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    overflow:hidden;
+}
+
+/* dark overlay */
+
+.contact-hero::before{
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    rgba(0,0,0,0.45);
+
+    z-index:1;
+}
+
+.contact-hero-overlay{
+    position:relative;
+
+    z-index:2;
+
+    width:100%;
+    height:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    color:#fff;
+
+    padding:20px;
+}
+
+.contact-hero-title{
+    font-family:
+    "Cormorant Garamond",
+    serif;
+
+    font-size:92px;
+
+    font-weight:500;
+
+    line-height:1;
+
+    margin-bottom:30px;
+
+    color:#fff;
+}
+
+.contact-breadcrumb{
+    display:flex;
+
+    align-items:center;
+
+    gap:22px;
+
+    font-size:20px;
+
+    font-weight:600;
+
+    color:#fff;
+}
+
+.contact-breadcrumb span{
+    color:#fff;
+}
+
+.dot{
+    font-size:24px;
+}
+
+/* ---------- LARGE TABLET ---------- */
+
+@media (max-width: 1200px){
+
+    .contact-hero{
+        height:460px;
+    }
+
+    .contact-hero-title{
+        font-size:72px;
+    }
+
+    .contact-breadcrumb{
+        font-size:18px;
+    }
+}
+
+/* ---------- TABLET ---------- */
+
+@media (max-width: 992px){
+
+    .contact-hero{
+        height:400px;
+    }
+
+    .contact-hero-title{
+        font-size:60px;
+    }
+
+    .contact-breadcrumb{
+        font-size:17px;
+
+        gap:16px;
+    }
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 768px){
+
+    .contact-hero{
+        height:330px;
+    }
+
+    .contact-hero-title{
+        font-size:46px;
+
+        margin-bottom:18px;
+    }
+
+    .contact-breadcrumb{
+        font-size:15px;
+
+        gap:12px;
+    }
+
+    .dot{
+        font-size:18px;
+    }
+}
+
+/* ---------- SMALL MOBILE ---------- */
+
+@media (max-width: 480px){
+
+    .contact-hero{
+        height:280px;
+    }
+
+    .contact-hero-title{
+        font-size:38px;
+    }
+
+    .contact-breadcrumb{
+        font-size:14px;
+    }
+}

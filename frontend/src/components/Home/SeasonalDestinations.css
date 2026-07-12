@@ -1,0 +1,349 @@
+.seasonal-section{
+background:#161313;
+padding:90px 120px;
+text-align:center;
+}
+
+.seasonal-header{
+margin-bottom:35px;
+}
+
+.seasonal-tag{
+display:block;
+color:#ff8637;
+font-size:18px;
+font-weight:700;
+letter-spacing:3px;
+margin-bottom:16px;
+}
+
+.seasonal-title{
+font-family:'Cormorant Garamond', serif;
+font-size:46px;
+font-weight:500;
+color:#fff;
+}
+
+.season-tabs{
+display:flex;
+justify-content:center;
+gap:22px;
+margin-bottom:28px;
+}
+
+.season-btn{
+width:260px;
+height:54px;
+border-radius:35px;
+border:1px solid rgba(255,255,255,.18);
+background:#252121;
+color:#fff;
+font-size:20px;
+font-family:'Cormorant Garamond', serif;
+font-weight:800;
+cursor:pointer;
+transition:.3s;
+}
+
+.season-btn:hover,
+.active-season{
+background:#fff;
+color:#ff8637;
+}
+
+.country-tabs{
+display:flex;
+justify-content:center;
+gap:14px;
+margin-bottom:35px;
+}
+
+.country-btn{
+width:140px;
+height:48px;
+border-radius:30px;
+border:1px solid rgba(255,255,255,.25);
+background:#252121;
+color:#fff;
+font-size:20px;
+font-weight:800;
+font-family:'Cormorant Garamond', serif;
+cursor:pointer;
+transition:.3s;
+}
+
+.country-btn:hover,
+.active-country{
+background:#fff;
+color:#ff8637;
+}
+
+.destination-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:22px;
+border:1px solid rgba(255,255,255,.12);
+padding:28px;
+margin-top:25px;
+}
+
+.destination-column{
+display:flex;
+flex-direction:column;
+gap:22px;
+}
+
+.destination-card{
+position:relative;
+display:block;
+overflow:hidden;
+cursor:pointer;
+text-decoration:none;
+}
+
+.destination-card img{
+width:100%;
+height:auto;
+display:block;
+transition:.5s;
+}
+
+.destination-overlay{
+position:absolute;
+inset:0;
+background:rgba(195,120,67,.72);
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+opacity:0;
+transition:.4s;
+}
+
+.overlay-content{
+width:100%;
+padding:20px;
+}
+
+.overlay-content h3{
+color:#fff;
+font-family:'Cormorant Garamond', serif;
+font-size:clamp(24px,3vw,42px);
+line-height:1.1;
+margin-bottom:10px;
+display:inline-block;
+border-bottom:2px solid #fff;
+word-break:break-word;
+}
+
+.overlay-content p{
+color:#fff;
+font-size:clamp(12px,1vw,16px);
+line-height:1.6;
+max-width:90%;
+margin:0 auto 20px;
+}
+
+.overlay-arrow{
+width:70px;
+height:70px;
+margin:auto;
+border-radius:50%;
+background:#fff;
+color:#b96e3c;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:22px;
+}
+
+.destination-card:hover img{
+transform:scale(1.08);
+}
+
+.destination-card:hover .destination-overlay{
+opacity:1;
+}
+
+/* LARGE TABLET */
+
+@media(max-width:1200px){
+
+.seasonal-section{
+    padding:80px 50px;
+}
+
+.seasonal-title{
+    font-size:40px;
+}
+
+.seasonal-tag{
+    font-size:15px;
+}
+
+.season-btn{
+    width:220px;
+    font-size:18px;
+}
+
+.country-btn{
+    font-size:18px;
+}
+
+.destination-grid{
+    gap:18px;
+    padding:20px;
+}
+
+.destination-column{
+    gap:18px;
+}
+
+
+}
+
+/* TABLET */
+
+@media(max-width:1024px){
+
+
+.seasonal-section{
+    padding:70px 35px;
+}
+
+.destination-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:16px;
+}
+
+.destination-column{
+    gap:16px;
+}
+
+.destination-card img{
+    width:100%;
+    height:auto;
+    object-fit:contain;
+}
+
+.overlay-content h3{
+    font-size:28px;
+}
+
+.overlay-content p{
+    font-size:13px;
+}
+
+.overlay-arrow{
+    width:50px;
+    height:50px;
+    font-size:16px;
+}
+
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.seasonal-section{
+    padding:60px 18px;
+}
+
+.seasonal-title{
+    font-size:30px;
+    font-weight:700;
+}
+
+.seasonal-tag{
+    font-size:13px;
+    line-height:1.6;
+}
+
+.season-tabs{
+    flex-direction:column;
+    align-items:center;
+    gap:12px;
+}
+
+.season-btn{
+    width:100%;
+    max-width:320px;
+    height:48px;
+    font-size:16px;
+}
+
+.country-tabs{
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.country-btn{
+    width:120px;
+    height:42px;
+    font-size:16px;
+}
+
+.destination-grid{
+    grid-template-columns:1fr;
+    padding:14px;
+    gap:14px;
+}
+
+.destination-column{
+    gap:14px;
+}
+
+.destination-card img{
+    width:100%;
+    height:auto;
+    object-fit:contain;
+}
+
+.overlay-content{
+    padding:16px;
+}
+
+.overlay-content h3{
+    font-size:22px;
+}
+
+.overlay-content p{
+    font-size:12px;
+}
+
+.overlay-arrow{
+    width:44px;
+    height:44px;
+    font-size:15px;
+}
+
+
+}
+
+/* SMALL MOBILE */
+
+@media(max-width:480px){
+
+
+.seasonal-section{
+    padding:50px 12px;
+}
+
+.seasonal-title{
+    font-size:26px;
+}
+
+.destination-grid{
+    padding:10px;
+}
+
+.overlay-content h3{
+    font-size:20px;
+}
+
+.overlay-content p{
+    font-size:11px;
+}
+
+}

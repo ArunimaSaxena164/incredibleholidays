@@ -1,0 +1,192 @@
+.loyalty-section{
+    background:#fff;
+    padding:70px 90px;
+    position:relative;
+    overflow:hidden;
+}
+
+/* subtle corner shapes */
+
+.loyalty-section::before{
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:0;
+
+    width:220px;
+    height:220px;
+
+    background:#f8f5f3;
+
+    clip-path:polygon(0 100%,100% 100%,0 0);
+}
+
+.loyalty-section::after{
+    content:"";
+
+    position:absolute;
+
+    right:0;
+    bottom:0;
+
+    width:220px;
+    height:220px;
+
+    background:#f8f5f3;
+
+    clip-path:polygon(100% 0,100% 100%,0 100%);
+}
+
+.loyalty-container{
+    max-width:1500px;
+
+    margin:0 auto;
+
+    display:grid;
+
+    grid-template-columns:
+    1fr 0.95fr;
+
+    align-items:center;
+
+    gap:70px;
+
+    position:relative;
+    z-index:2;
+}
+
+.loyalty-content{
+    max-width:720px;
+}
+
+.loyalty-tag{
+    display:block;
+
+    color:#ff7f36;
+
+    font-size:12px;
+
+    font-weight:700;
+
+    letter-spacing:5px;
+
+    margin-bottom:18px;
+}
+
+.loyalty-title{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:44px;
+
+    font-weight:500;
+
+    color:#111;
+
+    line-height:1.05;
+
+    margin-bottom:28px;
+}
+
+.loyalty-text{
+    color:#707070;
+
+    font-size:14px;
+
+    line-height:2.05;
+
+    max-width:760px;
+}
+
+.loyalty-image-wrapper{
+    width:100%;
+}
+
+.loyalty-image{
+    width:100%;
+
+    display:block;
+
+    object-fit:cover;
+}
+
+/* ---------- TABLET ---------- */
+
+@media(max-width:1100px){
+
+    .loyalty-section{
+        padding:60px 40px;
+    }
+
+    .loyalty-container{
+        gap:45px;
+    }
+
+    .loyalty-title{
+        font-size:52px;
+    }
+
+    .loyalty-text{
+        font-size:17px;
+    }
+}
+
+/* ---------- MOBILE ---------- */
+
+@media(max-width:768px){
+
+    .loyalty-section{
+        padding:50px 22px;
+    }
+
+    .loyalty-container{
+        grid-template-columns:1fr;
+
+        gap:35px;
+    }
+
+    .loyalty-content{
+        order:1;
+    }
+
+    .loyalty-image-wrapper{
+        order:2;
+    }
+
+    .loyalty-title{
+        font-size:40px;
+
+        line-height:1.15;
+    }
+
+    .loyalty-text{
+        font-size:15px;
+
+        line-height:1.9;
+    }
+
+    .loyalty-section::before,
+    .loyalty-section::after{
+        width:120px;
+        height:120px;
+    }
+}
+
+/* ---------- SMALL MOBILE ---------- */
+
+@media(max-width:480px){
+
+    .loyalty-title{
+        font-size:34px;
+    }
+
+    .loyalty-tag{
+        font-size:11px;
+        letter-spacing:4px;
+    }
+
+    .loyalty-text{
+        font-size:14px;
+    }
+}
