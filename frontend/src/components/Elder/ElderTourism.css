@@ -1,0 +1,1022 @@
+/* =========================================================
+   ELDER TOURISM PAGE
+   Premium / Luxury Travel Styling
+========================================================= */
+
+.elder-page {
+    color: #111;
+    background: #fff;
+    overflow: hidden;
+    padding-top: 100px;
+}
+
+/* =========================================================
+   COMMON
+========================================================= */
+
+.elder-section-tag {
+    display: inline-block;
+    color: #ff8637;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin-bottom: 18px;
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.elder-hero {
+    min-height: 520px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 30px 0 60px;
+}
+
+.elder-hero-content {
+    width: 100%;
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 0 40px 0 60px;
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+/* LEFT SIDE */
+.elder-hero-copy {
+    max-width: 650px;
+    position: relative;
+    z-index: 3;
+}
+
+.elder-tag {
+    display: inline-block;
+    color: #ff8637;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin-bottom: 18px;
+}
+
+.elder-hero h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(44px, 4.2vw, 64px);
+    line-height: 1.02;
+    font-weight: 500;
+    margin: 0 0 20px;
+    letter-spacing: -1px;
+}
+
+.elder-hero h1 span {
+    color: #ff8637;
+}
+
+.elder-hero p {
+    max-width: 560px;
+    color: #686868;
+    font-size: 15.5px;
+    line-height: 1.8;
+    margin: 0 0 30px;
+}
+
+/* HERO BUTTONS */
+.elder-hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.elder-primary-btn,
+.elder-whatsapp-btn,
+.elder-final-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 18px;
+    font-weight: 600;
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.elder-primary-btn {
+    background: #ff8637;
+    color: #fff;
+    padding: 15px 28px;
+    box-shadow: 0 10px 25px rgba(255, 134, 55, 0.16);
+}
+
+.elder-primary-btn:hover {
+    background: #e96f25;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 14px 28px rgba(255, 134, 55, 0.22);
+}
+
+.elder-whatsapp-btn {
+    color: #222;
+    border: 1px solid #dedede;
+    padding: 14px 26px;
+    background: #fff;
+}
+
+.elder-whatsapp-btn:hover {
+    border-color: #ff8637;
+    color: #ff8637;
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+   HERO IMAGE (Crisp, completely opaque, clean corners)
+========================================================= */
+
+.elder-hero-image {
+    width: 100%;
+    max-width: 510px;
+    height: 330px;
+    position: relative;
+    margin-left: auto;
+    overflow: hidden;
+    border-radius: 26px;
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.06);
+    background: #fff;
+}
+
+.elder-hero-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center 15%;
+    filter: none;
+    transition: transform 0.8s ease;
+}
+
+.elder-hero-image:hover img {
+    transform: scale(1.03);
+}
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.elder-intro {
+    padding: 100px 0;
+}
+
+.elder-intro-container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: 0.78fr 1.22fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.elder-intro-image {
+    width: 100%;
+    max-width: 410px;
+    height: 525px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 26px;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+}
+
+.elder-intro-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+.elder-intro-image:hover img {
+    transform: scale(1.035);
+}
+
+.elder-intro-content h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 54px;
+    line-height: 0.98;
+    font-weight: 500;
+    margin: 0 0 22px;
+    letter-spacing: -0.7px;
+}
+
+.elder-intro-content p {
+    color: #707070;
+    font-size: 15px;
+    line-height: 1.85;
+    margin: 0 0 18px;
+}
+
+.elder-intro-content .elder-lead {
+    color: #333;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 23px;
+    line-height: 1.35;
+}
+
+.elder-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 32px;
+}
+
+.elder-stat {
+    background: #f9e2ce;
+    padding: 21px 16px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 134, 55, 0.08);
+}
+
+.elder-stat strong {
+    display: block;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 31px;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 4px;
+}
+
+.elder-stat span {
+    color: #555;
+    font-size: 12px;
+}
+
+/* =========================================================
+   WHAT MAKES DIFFERENT
+========================================================= */
+
+.elder-difference {
+    background: #f8f6f3;
+    padding: 100px 40px;
+}
+
+.elder-section-heading {
+    max-width: 850px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.elder-section-heading h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 56px;
+    line-height: 0.98;
+    font-weight: 500;
+    margin: 0 0 20px;
+    letter-spacing: -0.8px;
+}
+
+.elder-section-heading h2 span {
+    color: #ff8637;
+}
+
+.elder-section-heading p {
+    max-width: 680px;
+    margin: 0 auto;
+    color: #707070;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.elder-advantages {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.elder-advantage-card {
+    background: #fbd3ae;
+    padding: 34px 30px;
+    min-height: 220px;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 134, 55, 0.12);
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.elder-advantage-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.08);
+}
+
+.elder-advantage-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ff8637;
+    font-size: 21px;
+    background: #fff;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.elder-advantage-card h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 28px;
+    line-height: 1.05;
+    font-weight: 500;
+    margin: 0 0 10px;
+}
+
+.elder-advantage-card p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.75;
+    margin: 0;
+}
+
+/* =========================================================
+   EXCLUSIVES
+========================================================= */
+
+.elder-exclusives {
+    padding: 100px 0;
+}
+
+.elder-exclusives-container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: 0.72fr 1.28fr;
+    gap: 75px;
+    align-items: start;
+}
+
+.elder-exclusives-heading h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 53px;
+    line-height: 0.98;
+    font-weight: 500;
+    margin: 0 0 20px;
+}
+
+.elder-exclusives-heading h2 span {
+    color: #ff8637;
+}
+
+.elder-exclusives-heading p {
+    color: #707070;
+    font-size: 15px;
+    line-height: 1.85;
+    max-width: 400px;
+    margin: 0;
+}
+
+.elder-exclusive-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 26px 24px;
+}
+
+.elder-exclusive-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 17px;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 18px;
+    transition:
+        border-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.elder-exclusive-card:hover {
+    border-color: #f2c7a5;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.05);
+}
+
+.elder-exclusive-icon {
+    flex-shrink: 0;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ff8637;
+    font-size: 19px;
+    border: 1px solid #f2d2b8;
+    border-radius: 50%;
+    background: #fffaf6;
+}
+
+.elder-exclusive-card h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 22px;
+    line-height: 1.1;
+    font-weight: 500;
+    margin: 0 0 7px;
+}
+
+.elder-exclusive-card p {
+    color: #707070;
+    font-size: 13px;
+    line-height: 1.65;
+    margin: 0;
+}
+
+/* =========================================================
+   JOURNEYS
+========================================================= */
+
+.elder-journeys {
+    background: #faf9f7;
+    padding: 100px 40px;
+}
+
+.elder-journey-list {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+}
+
+.elder-journey-card {
+    background: #fff;
+    display: grid;
+    grid-template-columns: 0.72fr 1.28fr;
+    align-items: center;
+    gap: 10px;
+    padding: 25px;
+    border-radius: 28px;
+    box-shadow: 0 12px 38px rgba(0, 0, 0, 0.055);
+    border: 1px solid rgba(0, 0, 0, 0.035);
+    overflow: hidden;
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.elder-journey-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+}
+
+.elder-journey-card:nth-child(even) {
+    grid-template-columns: 1.28fr 0.72fr;
+}
+
+.elder-journey-card:nth-child(even) .elder-journey-image {
+    order: 2;
+}
+
+.elder-journey-card:nth-child(even) .elder-journey-content {
+    order: 1;
+}
+
+.elder-journey-image {
+    width: 100%;
+    max-width: 390px;
+    height: 350px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 22px;
+    background: #eee;
+}
+
+.elder-journey-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+.elder-journey-card:hover .elder-journey-image img {
+    transform: scale(1.045);
+}
+
+.elder-journey-number {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ff8637;
+    color: #fff;
+    border-radius: 50%;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 18px;
+    box-shadow: 0 7px 18px rgba(0, 0, 0, 0.12);
+}
+
+.elder-journey-content {
+    padding: 18px 32px 18px 35px;
+}
+
+.elder-journey-card:nth-child(even) .elder-journey-content {
+    padding-left: 32px;
+    padding-right: 35px;
+}
+
+.elder-journey-meta {
+    display: flex;
+    gap: 9px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.elder-journey-meta span {
+    color: #ff8637;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    border: 1px solid #f2c7a5;
+    border-radius: 30px;
+    padding: 6px 10px;
+}
+
+.elder-journey-content h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 36px;
+    line-height: 1.03;
+    font-weight: 500;
+    margin: 0 0 5px;
+    letter-spacing: -0.3px;
+}
+
+.elder-journey-content h4 {
+    color: #ff8637;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 21px;
+    font-weight: 500;
+    margin: 0 0 16px;
+}
+
+.elder-journey-content > p {
+    color: #707070;
+    font-size: 13.5px;
+    line-height: 1.75;
+    margin: 0 0 19px;
+}
+
+.elder-highlight-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.elder-highlight-title svg {
+    color: #ff8637;
+    font-size: 14px;
+}
+
+.elder-journey-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 22px;
+}
+
+.elder-journey-content li {
+    display: flex;
+    gap: 9px;
+    align-items: flex-start;
+    color: #555;
+    font-size: 12.5px;
+    line-height: 1.6;
+    margin-bottom: 6px;
+}
+
+.elder-journey-content li svg {
+    color: #ff8637;
+    font-size: 10px;
+    margin-top: 5px;
+    flex-shrink: 0;
+}
+
+.elder-journey-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #ff8637;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: gap 0.3s ease, color 0.3s ease;
+}
+
+.elder-journey-btn:hover {
+    color: #e96f25;
+    gap: 14px;
+}
+
+/* =========================================================
+   CUSTOMISATION
+========================================================= */
+
+.elder-customisation {
+    padding: 100px 0;
+    background: #fff;
+}
+
+.elder-customisation-container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: 75px;
+    align-items: center;
+}
+
+.elder-customisation-content h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 55px;
+    line-height: 0.98;
+    font-weight: 500;
+    margin: 0 0 22px;
+}
+
+.elder-customisation-content h2 span {
+    color: #ff8637;
+}
+
+.elder-customisation-content p {
+    max-width: 500px;
+    color: #707070;
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0 0 28px;
+}
+
+.elder-customisation-points {
+    display: grid;
+    gap: 15px;
+}
+
+.elder-customisation-points > div {
+    border: 1px solid #eee;
+    border-radius: 20px;
+    padding: 23px 27px;
+    position: relative;
+    transition:
+        border-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.elder-customisation-points > div:hover {
+    border-color: #f4c8a6;
+    transform: translateX(6px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.045);
+}
+
+.elder-customisation-points strong {
+    color: #ff8637;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.elder-customisation-points h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 4px 0 4px;
+}
+
+.elder-customisation-points p {
+    color: #707070;
+    font-size: 13px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* =========================================================
+   FINAL CTA (Full Image Stretched to Fit Vertically + Horizontally)
+========================================================= */
+
+/* =========================================================
+   FINAL CTA
+========================================================= */
+
+.elder-final-cta {
+    min-height: 520px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    background-color: #2b201a;
+}
+
+/* 
+   Keep natural aspect ratio (contain) centered,
+   preventing horizontal stretch/dilation while keeping all heads visible.
+*/
+.elder-final-cta::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("/elder/elder-final.png");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+/* 
+   Smooth gradient overlay that darkens the text area and blends 
+   the left/right edges into the container's background color.
+*/
+.elder-final-overlay {
+    position: absolute;
+    inset: 0;
+    background: 
+        linear-gradient(90deg, #2b201a 0%, rgba(43, 32, 26, 0.4) 18%, rgba(0, 0, 0, 0.45) 50%, rgba(43, 32, 26, 0.4) 82%, #2b201a 100%),
+        linear-gradient(180deg, rgba(43, 32, 26, 0.5) 0%, rgba(0, 0, 0, 0.35) 50%, rgba(43, 32, 26, 0.5) 100%);
+    z-index: 1;
+}
+
+.elder-final-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 60px 30px;
+    color: #fff;
+}
+
+.elder-final-content > span {
+    display: block;
+    color: #ffb077;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin-bottom: 16px;
+}
+
+.elder-final-content h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 56px;
+    line-height: 1.02;
+    font-weight: 500;
+    margin: 0 0 18px;
+}
+
+.elder-final-content h2 em {
+    color: #ff8637;
+    font-style: normal;
+}
+
+.elder-final-content p {
+    max-width: 570px;
+    margin: 0 auto 28px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.elder-final-btn {
+    background: #ff8637;
+    color: #fff;
+    padding: 16px 30px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.elder-final-btn:hover {
+    background: #fff;
+    color: #ff8637;
+    transform: translateY(-3px);
+}
+
+/* =========================================================
+   RESPONSIVE (TABLETS & MOBILE)
+========================================================= */
+
+@media (max-width: 1100px) {
+    .elder-page {
+        padding-top: 85px;
+    }
+
+    .elder-hero-content {
+        grid-template-columns: 1.1fr 0.9fr;
+        padding: 0 30px;
+        gap: 30px;
+    }
+
+    .elder-hero-image {
+        height: 300px;
+    }
+
+    .elder-hero h1 {
+        font-size: 50px;
+    }
+
+    .elder-intro-container {
+        grid-template-columns: 0.8fr 1.2fr;
+        gap: 55px;
+    }
+
+    .elder-intro-image {
+        height: 480px;
+    }
+
+    .elder-journey-card {
+        grid-template-columns: 0.68fr 1.32fr;
+    }
+
+    .elder-journey-card:nth-child(even) {
+        grid-template-columns: 1.32fr 0.68fr;
+    }
+
+    .elder-journey-content {
+        padding-left: 25px;
+        padding-right: 20px;
+    }
+
+    .elder-journey-card:nth-child(even) .elder-journey-content {
+        padding-left: 20px;
+        padding-right: 25px;
+    }
+}
+
+@media (max-width: 900px) {
+    .elder-page {
+        padding-top: 75px;
+    }
+
+    .elder-hero {
+        padding: 25px 0 45px;
+    }
+
+    .elder-hero-content {
+        grid-template-columns: 1fr;
+        padding: 0 25px;
+        gap: 35px;
+    }
+
+    .elder-hero-copy {
+        max-width: 100%;
+    }
+
+    .elder-hero-image {
+        width: 100%;
+        max-width: 500px;
+        height: 290px;
+        margin: 0 auto;
+    }
+
+    .elder-intro-container {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .elder-intro-image {
+        height: 440px;
+        max-width: 400px;
+    }
+
+    .elder-advantages {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+    }
+
+    .elder-exclusives-container {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .elder-customisation-container {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .elder-journey-card,
+    .elder-journey-card:nth-child(even) {
+        grid-template-columns: 1fr;
+    }
+
+    .elder-journey-card:nth-child(even) .elder-journey-image {
+        order: 0;
+    }
+
+    .elder-journey-card:nth-child(even) .elder-journey-content {
+        order: 1;
+        padding: 25px;
+    }
+
+    .elder-journey-image {
+        max-width: 470px;
+        height: 340px;
+    }
+}
+
+@media (max-width: 768px) {
+    .elder-page {
+        padding-top: 65px;
+    }
+
+    .elder-section-tag {
+        font-size: 11px;
+        letter-spacing: 3px;
+    }
+
+    .elder-hero-content {
+        padding: 0 20px;
+        gap: 25px;
+    }
+
+    .elder-hero h1 {
+        font-size: 40px;
+    }
+
+    .elder-hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .elder-primary-btn,
+    .elder-whatsapp-btn {
+        width: 100%;
+    }
+
+    .elder-hero-image {
+        height: 260px;
+        border-radius: 20px;
+    }
+
+    .elder-intro {
+        padding: 70px 0;
+    }
+
+    .elder-intro-content h2 {
+        font-size: 40px;
+    }
+
+    .elder-stats {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .elder-difference,
+    .elder-exclusives,
+    .elder-journeys,
+    .elder-customisation {
+        padding: 70px 20px;
+    }
+
+    .elder-section-heading h2,
+    .elder-exclusives-heading h2,
+    .elder-customisation-content h2 {
+        font-size: 38px;
+    }
+
+    .elder-exclusive-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .elder-final-content h2 {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 480px) {
+    .elder-hero h1 {
+        font-size: 34px;
+    }
+
+    .elder-hero-image {
+        height: 220px;
+    }
+
+    .elder-final-content h2 {
+        font-size: 34px;
+    }
+}
