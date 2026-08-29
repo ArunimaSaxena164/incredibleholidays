@@ -62,7 +62,7 @@ function Navbar() {
               isActive ? "nav-link active-link" : "nav-link"
             }
           >
-            Elders Tourism
+            Holidays for 60+
           </NavLink>
 
           <NavLink
@@ -117,7 +117,7 @@ function Navbar() {
         >
           Corporate Travel
         </a>
-        <NavLink to="/elders-tourism">Elders Tourism</NavLink>
+        <NavLink to="/elders-tourism">Holidays for 60+</NavLink>
 
         <NavLink to="/testimonials">Testimonials</NavLink>
 
